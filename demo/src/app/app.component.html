@@ -1,5 +1,10 @@
 <h3>Dropdowns for range</h3>
-<nggu-dropdown-range [dataSource]="rangeContext" (valuesChanged)="rangeValueChanged($event)"></nggu-dropdown-range>
+<div ngguDropdown>
+  <div ngguDropdownToggle><span>Drop down</span></div>
+  <div ngguDropdownMenu>
+    <ngguNumRangeItems [dataSource]="rangeContext"></ngguNumRangeItems>
+  </div>
+</div>
 <span>
   nggu-dropdown-range is used for setting number range based on dropdown style. it supplied two attributes, dataSource and valuesChanged.
   <br>

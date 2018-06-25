@@ -1,9 +1,10 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {DropDownsConfig} from './dropdowns.config';
-import {NumRange} from './num-range';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import {NgguDropdown, NgguDropdownAnchor, NgguDropdownMenu, NgguDropdownToggle} from './dropdowns';
+import {NumRangeItems} from './dropdown-items';
 
-const NGGU_DROPDOWNS = [NumRange];
+const NGGU_DROPDOWNS = [NgguDropdown, NgguDropdownAnchor, NgguDropdownToggle, NgguDropdownMenu, NumRangeItems];
 
 @NgModule({
   imports: [FormsModule],
