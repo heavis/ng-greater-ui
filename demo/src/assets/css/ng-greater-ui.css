@@ -1,0 +1,83 @@
+.arrow::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+.none {
+  display: none;
+}
+
+.drop-down {
+  width: auto;
+  max-width: 100%;
+  line-height: 2rem;
+  margin-right: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  margin-bottom: 5px;
+}
+.drop-down .drop-down-menu {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  min-width: 100px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  max-height: 300px;
+  padding: 5px;
+}
+.drop-down .drop-down-menu .btn-group {
+  /*padding: 15px 0 5px 0;*/
+}
+.drop-down .drop-down-menu .btn-group .btn {
+  margin: 0 5px 0 0;
+  padding: 4px 8px;
+}
+.drop-down .drop-down-menu .label-for-text {
+  line-height: 23px;
+  height: 23px;
+}
+.drop-down .drop-down-menu .text-group input {
+  height: 23px;
+}
+.drop-down .drop-down-menu .error-group {
+  color: #f00;
+  height: 24px;
+  font-size: 11px;
+  line-height: 11px;
+}
+.drop-down .drop-down-toggle {
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  /*border-radius: 3px !important;*/
+  background-color: #fff;
+  cursor: pointer;
+}
+.drop-down .drop-down-toggle .drop-down-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+.drop-down .drop-down-toggle:hover,
+.drop-down .drop-down-toggle.active {
+  color: #5074AD !important;
+}
+.drop-down .drop-down-toggle:hover .arrow {
+  color: #5074AD;
+}
+
+/*# sourceMappingURL=demo/src/assets/css/ng-greater-ui.css.map */

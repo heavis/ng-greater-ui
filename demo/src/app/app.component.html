@@ -1,0 +1,17 @@
+<h3>Dropdowns for range</h3>
+<nggu-dropdown-range [dataSource]="rangeContext" (valuesChanged)="rangeValueChanged($event)"></nggu-dropdown-range>
+<span>
+  nggu-dropdown-range is used for setting number range based on dropdown style. it supplied two attributes, dataSource and valuesChanged.
+  <br>
+  dataSource is a instance of RangeContext class, definition as below:<br>
+    #
+      name: string;
+      min?: number;
+      max?: number;
+      val1?: any;
+      val2?: any;
+    #
+  'name' will display as header, 'min' and 'max' attributes limited setting range, 'val1' and 'val2' are always contained in 'min' and 'max' range.
+  You can gain setting result from 'val1' and 'val2'.
+  'valuesChanged' is a type of Event, you can attach a listener to 'valuesChanged' and the registered listener will be triggered if 'val1' or 'val2' is updated.
+</span>
